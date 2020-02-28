@@ -35,9 +35,7 @@ make run
   
   - Adds openjdk-11-jre
   
-  - Adds: git and 
-  
-    [gitchangelog]: https://github.com/vaab/gitchangelog	"GitChangelog v3.0.4 "
+  - Adds: git and  [gitchangelog]: https://github.com/vaab/gitchangelog	"GitChangelog v3.0.4 "
   
   - Adds; shunit2  2.1.8pre
   
