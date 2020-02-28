@@ -35,9 +35,7 @@ make run
   
   - Adds openjdk-11-jre
   
-  - Adds: git and 
-  
-    [gitchangelog]: https://github.com/vaab/gitchangelog	"GitChangelog v3.0.4 "
+  - Adds: git and gitchangelog ( https://github.com/vaab/gitchangelog)
   
   - Adds; shunit2  2.1.8pre
   
@@ -49,12 +47,12 @@ make run
 ### Docker args:
 
 - BIN_PATH=/usr/local/bin
-- GIT_URL=the_git_url (gitlab, github, bitbucket)
+- GIT_URL=the_git_url (gitlab, github, bitbucket)  
 - TERRAFORM_VERSION=0.12.21
 - INSPEC_VERSION=4.18.97
 - TERRAGRUNT_VERSION=0.22.5
 
-
+**Note: set the GIT_URL arg before of  build  the image** 
 
 ### Files.
 

@@ -15,7 +15,7 @@ RUN apt-get update && \
       openjdk-11-jre
 
 ARG BIN_PATH=/usr/local/bin
-ARG GIT_URL=gitlab.disney.com
+ARG GIT_URL=THE_GIT_URL
 
 RUN mkdir ~/.ssh \
 && echo "Host ${GIT_URL}\n    StrictHostKeyChecking=no\n    UserKnownHostsFile=/dev/null" > ~/.ssh/config \
