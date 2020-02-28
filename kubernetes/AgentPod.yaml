@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: Pod
+spec:
+  serviceAccountName: default
+  containers:
+  - name: docker
+    image: "docker:stable"
+    command:
+    - cat
+    tty: true
+    volumeMounts:
+    - name: docker-socket
+      mountPath: /var/run/docker.sock
+    - name: gcr-push-docker-cfg
+      mountPath: /root
+  volumes:
+  - name: docker-socket
+    hostPath:
+      path: /var/run/docker.sock
+  - name: gcr-push-docker-cfg
+    projected:
+      sources:
+      - secret:
+          name: gcr-push
+          items:
+            - key: .dockerconfigjson
+              path: .docker/config.json
