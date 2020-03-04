@@ -70,7 +70,12 @@ make run
     └── versiontag_xyz
 ```
 
-
+### Get de Docker Image
+```
+$ docker pull docker.pkg.github.com/jcalles/ci-agent-tools/buildpack:v1.0
+Use as base image in DockerFile:
+FROM docker.pkg.github.com/jcalles/ci-agent-tools/buildpack:v1.0
+```
 
 ## Contributing
 
